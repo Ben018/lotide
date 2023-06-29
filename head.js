@@ -7,7 +7,7 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-const tail = function (actual) {
+const head = function (actual) {
   if (actual !== null) {
     return actual[0];
   } else {
@@ -17,5 +17,5 @@ const tail = function (actual) {
 
 // TEST CODE
 
-assertEqual(tail([5, 6, 7]), 5);
-assertEqual(tail(["Hello", "Lighthouse", "Labs"]), "Hello");
+assertEqual(head([5, 6, 7]), 5);
+assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
