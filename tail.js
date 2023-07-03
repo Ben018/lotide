@@ -1,5 +1,3 @@
-const assertEqual = require("./assertEqual");
-
 const tail = function (actual) {
   if (actual !== null) {
     return actual.slice(1);
