@@ -33,3 +33,5 @@ const without = function (array1, array2) {
 // Test
 without([1, 2, 3], [1]) // => [2, 3]
 without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
+
+module.exports = without;

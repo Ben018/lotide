@@ -1,5 +1,6 @@
 // Function returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
+
 const eqObjects = function (object1, object2) {
   const objectKeyArr1 = Object.keys(object1);
   const objectKeyArr2 = Object.keys(object2);
@@ -29,7 +30,9 @@ const assertObjectsEqual = function (actual, expected) {
   }
 };
 
-// Test
-assertObjectsEqual({ a: 1, b: 2, c: 3 }, { a: 1, b: 2, c: 3 }), true; // => should PASS
-assertObjectsEqual({ a: 1, b: 2, c: 3 }, { a: 1, b: 3, c: 3 }), false; // => should FAIL
-assertObjectsEqual({ a: 1 }, { a: 1, b: 3, c: 3 }), false; // => should FAIL
+// // Test
+// assertObjectsEqual({ a: 1, b: 2, c: 3 }, { a: 1, b: 2, c: 3 }), true; // => should PASS
+// assertObjectsEqual({ a: 1, b: 2, c: 3 }, { a: 1, b: 3, c: 3 }), false; // => should FAIL
+// assertObjectsEqual({ a: 1 }, { a: 1, b: 3, c: 3 }), false; // => should FAIL
+
+module.exports = assertObjectsEqual;

@@ -22,7 +22,9 @@ const countLetters = function (arr) {
   return results;
 }
 
-// Test
-console.log(countLetters("LHL"));
-console.log(countLetters("LHL LHL"));
-console.log(countLetters("Commit and push the new file within your git repository"));
+// // Test
+// console.log(countLetters("LHL"));
+// console.log(countLetters("LHL LHL"));
+// console.log(countLetters("Commit and push the new file within your git repository"));
+
+module.exports = countLetters;
